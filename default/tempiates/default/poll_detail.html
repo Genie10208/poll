@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
@@ -14,7 +13,7 @@
     <ul>
         {% for option in option_list %}
         <li>
-            {{option.title}}:{{option.count}} 票
+            <a href="/option/{{option.id}}/">{{option.title}}</a>:{{option.count}} 票
         </li>
         {% endfor %}
     </ul>
